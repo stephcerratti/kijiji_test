@@ -5,3 +5,6 @@ Front end developer test for Kijiji
 
 
 -install the masonry package manager npm install masonry-layout
+
+-began small: included the listing data within the same JS file and as an array of objects. This initial data included listings that were perfect sqaures to start.
+

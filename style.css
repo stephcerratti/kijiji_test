@@ -1,5 +1,10 @@
 .parent-container {
 	height: 800px;
 	width:	800px;
-	background-color: black;
+	background-color: pink;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
 }
