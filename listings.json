@@ -1,57 +1,97 @@
-[
-	{
-		"title": "A title",  
-		"image": "http://lorempixel.com/64/256"
-	},
+// console.log("jyg");
+//         $.ajax({
+//             //'async': false,
+//             //'global': false,
+//             'url': "listings.json",
+//             //'dataType': "json",
+//             'success': function (data) {
+//                 json = data;
+//                 console.log("hjf")
+//             }
+//         });
 
-	{
-		"title": "A title", 
-		// "width": 64, 
-		// "height": 128, 
-		"image": "http://lorempixel.com/64/128"
-	},
+// [
+//     {
+//         "title": "Listing 1", 
+//         "width": 200, 
+//         "height": 200, 
+//         "image": "http://lorempixel.com/200/200"
+//     },
 
-	{
-		"title": "A title", 
-		// "width": 100, 
-		// "height": 150, 
-		"image": "http://lorempixel.com/100/150"
-	},
+//     {
+//         "title": "Listing 2", 
+//         "width": 200, 
+//         "height": 200, 
+//         "image": "http://lorempixel.com/200/200"
+//     },
 
-	{
-		"title": "A title", 
-		// "width": 73, 
-		// "height": 128, 
-		"image": "http://lorempixel.com/64/128"
-	},
+//     {
+//         "title": "Listing 3", 
+//         "width": 200, 
+//         "height": 200, 
+//         "image": "http://lorempixel.com/200/200"
+//     },
 
-	{
-		"title": "A title", 
-		// "width": 125, 
-		// "height": 256, 
-		"image": "http://lorempixel.com/64/256"
-	},
+//     {
+//         "title": "Listing 4", 
+//         "width": 200, 
+//         "height": 200, 
+//         "image": "http://lorempixel.com/200/200"
+//     },
 
-	{
-		"title": "A title", 
-		// "width": 50, 
-		// "height": 75, 
-		"image": "http://lorempixel.com/64/128"
-	},
+//     {
+//         "title": "Listing 5", 
+//         "width": 200, 
+//         "height": 200, 
+//         "image": "http://lorempixel.com/200/200"
+//     },
 
-	{
-		"title": "A title", 
-		// "width": 130, 
-		// "height": 205, 
-		"image": "http://lorempixel.com/64/256"
-	},
+//     {
+//         "title": "Listing 6", 
+//         "width": 200, 
+//         "height": 200, 
+//         "image": "http://lorempixel.com/200/200"
+//     },
 
-	{
-		"title": "A title", 
-		// "width": 64, 
-		// "height": 128, 
-		"image": "http://lorempixel.com/64/128"
-	},
+//     {
+//         "title": "Listing 7", 
+//         "width": 200, 
+//         "height": 200, 
+//         "image": "http://lorempixel.com/200/200"
+//     },
 
+//     {
+//         "title": "Listing 8", 
+//         "width": 200, 
+//         "height": 200, 
+//         "image": "http://lorempixel.com/200/200"
+//     },
 
-]
+//     {
+//         "title": "Listing 9", 
+//         "width": 200, 
+//         "height": 200, 
+//         "image": "http://lorempixel.com/200/200"
+//     },
+
+//     {
+//         "title": "Listing 10", 
+//         "width": 200, 
+//         "height": 200, 
+//         "image": "http://lorempixel.com/200/200"
+//     },
+
+//     {
+//         "title": "Listing 11", 
+//         "width": 200, 
+//         "height": 200, 
+//         "image": "http://lorempixel.com/200/200"
+//     },
+
+//     {
+//         "title": "Listing 12", 
+//         "width": 200, 
+//         "height": 200, 
+//         "image": "http://lorempixel.com/200/200"
+//     }
+// ];
