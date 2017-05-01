@@ -1,4 +1,4 @@
-$(document).ready(function($){
+$(document).ready(function(){
 
      
 var listings = []
@@ -7,21 +7,27 @@ var listings = []
             "title": "Listing",
             "image": "http://lorempixel.com/200/200",
             "height": Math.floor(Math.random() * ((300-40)+1) + 40),
-            "width": Math.floor(Math.random() * ((300-40)+1) + 40),      
+            "width": Math.floor(Math.random() * ((300-40)+1) + 40), 
+            "id": "listing" + l, 
         };
     }; 
 
-var grid = document.querySelector('.grid');
-var $grid = $('.grid').masonry();
-var msnry = new Masonry( grid, {
-  itemSelector: '.grid-item',
-  columnWidth: 160
-});
 
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry('layout');
-});
-  
+
+function arrangeListings () {
+    let listing = listings[l];
+
+    // $("#listing0").css({"top": "0px", "left": "0px"});
+
+    $("#listing1").css()
+   
+
+
+    // for (let l=0; l<listings.length; l++) {
+    // }
+
+
+}
 
 
 function renderListings() {
@@ -36,6 +42,7 @@ function renderListings() {
 
         let listingDiv = document.createElement("div");
         listingDiv.setAttribute("class", "listing grid-item");
+        listingDiv.setAttribute("id", `${listing.id}`)
 
         // let newImg = document.createElement("div");
         // newImg.setAttribute("style",`background-image: url('${listing.image}'); 
@@ -59,9 +66,30 @@ function renderListings() {
 
 };
 
+arrangeListings();
+
 renderListings(listings);
 
 
 });
+
+// var grid = document.querySelector('.grid');
+// var $grid = $('.grid').masonry();
+// var msnry = new Masonry( grid, {
+//   itemSelector: '.grid-item',
+//   columnWidth: 160
+// });
+
+// $grid.imagesLoaded().progress( function() {
+//   $grid.masonry('layout');
+// });
+  
+    // $('.grid').masonry({
+    //     columnWidth: 320,
+    //     itemSelector: '.grid-item',
+    //     isFitWidth: true,
+    // }).imagesLoaded(function() {
+    //     $(this).masonry('reload');
+    // });
 
 
