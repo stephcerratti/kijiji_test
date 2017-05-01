@@ -3,23 +3,48 @@ $(document).ready(function(){
      
 var listings = []
     for (var l = 0; l < 12; l++) { 
+        var height = Math.floor(Math.random() * ((300-40)+1) + 40);
+        var width = Math.floor(Math.random() * ((300-40)+1) + 40);
+        var area = height * width;
         listings[l] = {
             "title": "Listing",
             "image": "http://lorempixel.com/200/200",
-            "height": Math.floor(Math.random() * ((300-40)+1) + 40),
-            "width": Math.floor(Math.random() * ((300-40)+1) + 40), 
+            "height": height,
+            "width": width, 
+            "area": area,
             "id": "listing" + l, 
         };
     }; 
 
 
 
-function arrangeListings () {
-    let listing = listings[l];
+// function arrangeListings () {
+//     let listing = listings[l];
+
+//     var listingDivs,
+//     sortedDivs = document.getElementsByClassName("grid-item");
+
+//     sortedDivs = [].slice.call(sortedDivs);
+
+//     listingDivs = sortedDivs.sort(function (a, b) {
+//         var aArea = a.width * a.height,
+//             bArea = b.width * b.height;
+//         return aArea - bArea;
+//     });
+
+    // listings.sort(function(a,b){
+    //     var a = a.split("x");
+    //     var b = b.split("x");
+    //     if (a[0] !== b[0]) {
+    //         return b[0] - a[0]; // by width
+    //     } else {
+    //         return b[1] - a[1]; // by height
+    //     }
+    // });
 
     // $("#listing0").css({"top": "0px", "left": "0px"});
 
-    $("#listing1").css()
+    //$("#listing1").css()
    
 
 
@@ -27,7 +52,7 @@ function arrangeListings () {
     // }
 
 
-}
+// }
 
 
 function renderListings() {
@@ -66,7 +91,7 @@ function renderListings() {
 
 };
 
-arrangeListings();
+// arrangeListings();
 
 renderListings(listings);
 
