@@ -7,19 +7,10 @@
 
 .grid {
 	position: relative;
-	/*display: flex;*/
-	/*flex-wrap: wrap;*/
 }
 
 .grid-item {
   position: absolute;
   float: left;
-  /*width: 80px;*/
-  /*height: 60px;*/
   border: 2px solid hsla(0, 0%, 0%, 0.5);
-}
-
-#listing0 {
-	top: 0px;
-	left: 0px;
 }

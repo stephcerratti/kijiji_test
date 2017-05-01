@@ -1,8 +1,8 @@
 $(document).ready(function(){
-
-     
+      
 var listings = []
-    for (var l = 0; l < 12; l++) { 
+
+    for (var l = 0; l < 20; l++) { 
         var height = Math.floor(Math.random() * ((300-40)+1) + 40);
         var width = Math.floor(Math.random() * ((300-40)+1) + 40);
         var area = height * width;
@@ -17,43 +17,24 @@ var listings = []
     }; 
 
 
+function arrangeListings(listings) {
 
-// function arrangeListings () {
-//     let listing = listings[l];
+    listings.sort(function(a, b) {
+    return b.height - a.height;
+    });
 
-//     var listingDivs,
-//     sortedDivs = document.getElementsByClassName("grid-item");
+    // positionDivs(listings)
+};
 
-//     sortedDivs = [].slice.call(sortedDivs);
-
-//     listingDivs = sortedDivs.sort(function (a, b) {
-//         var aArea = a.width * a.height,
-//             bArea = b.width * b.height;
-//         return aArea - bArea;
-//     });
-
-    // listings.sort(function(a,b){
-    //     var a = a.split("x");
-    //     var b = b.split("x");
-    //     if (a[0] !== b[0]) {
-    //         return b[0] - a[0]; // by width
-    //     } else {
-    //         return b[1] - a[1]; // by height
-    //     }
-    // });
-
-    // $("#listing0").css({"top": "0px", "left": "0px"});
-
-    //$("#listing1").css()
-   
-
+// function positionDivs(listings) {
+//     var listing1 = listings[0];
+//     listing1.style.position = "absolute";
+//     listing1.style.left = 0+"px";
+//     listing.style.top = 0+"px";
+//     };
 
     // for (let l=0; l<listings.length; l++) {
     // }
-
-
-// }
-
 
 function renderListings() {
     console.log(listings)
@@ -69,11 +50,6 @@ function renderListings() {
         listingDiv.setAttribute("class", "listing grid-item");
         listingDiv.setAttribute("id", `${listing.id}`)
 
-        // let newImg = document.createElement("div");
-        // newImg.setAttribute("style",`background-image: url('${listing.image}'); 
-        // background-size:cover;background-repeat:no-repeat;background-position:center; 
-        // height: ${listing.height}px; width: ${listing.width}px;`);
-
         let newImg = document.createElement("img");
         newImg.setAttribute("src", "http://lorempixel.com/200/200");
         newImg.setAttribute("style", `height: ${listing.height}px; width: ${listing.width}px;`);  
@@ -88,33 +64,13 @@ function renderListings() {
         listingDiv.appendChild(newH3Tag);
         document.getElementById('grid').appendChild(listingDiv);
     };
-
 };
 
-// arrangeListings();
+arrangeListings(listings);
 
 renderListings(listings);
 
-
 });
 
-// var grid = document.querySelector('.grid');
-// var $grid = $('.grid').masonry();
-// var msnry = new Masonry( grid, {
-//   itemSelector: '.grid-item',
-//   columnWidth: 160
-// });
-
-// $grid.imagesLoaded().progress( function() {
-//   $grid.masonry('layout');
-// });
-  
-    // $('.grid').masonry({
-    //     columnWidth: 320,
-    //     itemSelector: '.grid-item',
-    //     isFitWidth: true,
-    // }).imagesLoaded(function() {
-    //     $(this).masonry('reload');
-    // });
 
 
